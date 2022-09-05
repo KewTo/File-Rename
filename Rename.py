@@ -14,14 +14,13 @@ current_filename = input('Please enter which part of the current filename you wo
 # Enter the new change to replace whatever input placed in current_filename
 new_filename = input('Please enter what you would like to change it to: ')
 
-# Goes through every file in specified folder
-paths = (os.path.join(root, filename)
-         for root, _, filenames in os.walk(folder)
-         for filename in filenames)
-
 
 # Replace old_filename with new_filename, replacing all current filename with a new desired filename
 def rename():
+    # Goes through every file in specified folder
+    paths = (os.path.join(root, filename)
+             for root, _, filenames in os.walk(folder)
+             for filename in filenames)
     for path in paths:
         newname = path.replace(current_filename, new_filename)
         if newname != path:
