@@ -1,9 +1,8 @@
 import os
 
-# Renaming a group of files by entering the entire folder directory name, current filename, and the new desired
-# filename. It will rename all files that has the current filename: for example all files that has the word 'TWICE'
-# in the filename will be replaced with twice if new_filename 'twice' is entered and current_filename 'TWICE' is
-# entered.
+""" Renaming a group of files by entering the entire folder directory name, current filename, and the new desired
+filename. It will rename all files that has the current filename: for example all files that has the word 'TWICE'
+in the filename will be replaced with twice if new_filename 'twice' is entered and current_filename 'TWICE' is entered. """
 
 # Enter entire folder directory name
 folder = input('Please copy and paste folder path: ')
